@@ -1,0 +1,70 @@
+:root {
+    --bg: #000;
+    --fg: #00ff66;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: Consolas, "Courier New", Courier, monospace;
+}
+
+.wrap {
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.panel {
+    text-align: center;
+    padding: 24px;
+}
+
+.label {
+    font-size: 28px;
+    letter-spacing: 0.5px;
+    margin-bottom: 16px;
+    text-shadow: 0 0 10px rgba(0, 255, 102, 0.35);
+}
+
+input[type="text"] {
+    width: min(360px, 80vw);
+    font-size: 22px;
+    padding: 10px 12px;
+    background: transparent;
+    color: var(--fg);
+    border: 2px solid var(--fg);
+    outline: none;
+    text-align: center;
+    text-shadow: 0 0 10px rgba(0, 255, 102, 0.25);
+}
+
+input[type="text"]::placeholder {
+    color: rgba(0, 255, 102, 0.45);
+}
+
+.msg {
+    margin-top: 14px;
+    min-height: 1.5em;
+    font-size: 16px;
+    opacity: 0.95;
+    white-space: pre-line;
+}
+
+
+.shake {
+    animation: shake 0.15s linear 0s 2;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-4px); }
+    50% { transform: translateX(4px); }
+    75% { transform: translateX(-3px); }
+    100% { transform: translateX(0); }
+}
