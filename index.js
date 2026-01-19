@@ -1,9 +1,10 @@
 (() => {
-    const PASSWORD = "theshire";
+    const PASSWORD = "history";
 
     const hintByFailCount = new Map([
-        [3, "Hint: Where hobbits begin."],
-        [5, "Hint: Home."]
+        [3, "Hint: Think about time"],
+        [6, "Hint: Something studied in school"],
+        [9, "Hint: The past, also known as..."],
     ]);
 
     const form = document.getElementById("form");
